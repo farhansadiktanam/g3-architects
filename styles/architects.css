@@ -6,3 +6,166 @@
   box-sizing: border-box;
   font-family: "Work Sans", sans-serif;
 }
+
+/* Shared style */
+.display-flex {
+  display: flex;
+}
+
+/* Text orange */
+.text-orange {
+  color: #ff900e;
+}
+
+/* Dark01 */
+.text-dark {
+  color: #131313;
+}
+
+/* Dark02 */
+.text-grey {
+  color: #424242;
+}
+
+/* Dark03 */
+.text-light-grey {
+  color: #727272;
+}
+
+/* Background color  */
+.bg-light {
+  background: rgba(255, 144, 14, 0.1);
+}
+
+/* Button style */
+.btn-primary {
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 20px 25px;
+  background: #ff900e;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+main > section {
+  margin-top: 100px;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* ###----- Header style -----## */
+
+/* Navbar style */
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+
+.brand {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  list-style: none;
+  margin-right: 30px;
+}
+.nav-link {
+  font-size: 1.1rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar,
+.banner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Banner style */
+.banner-content {
+  max-width: 865px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.banner-content .banner-title {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.banner-content .banner-description {
+  font-size: 1rem;
+  line-height: 24px;
+  margin-bottom: 15px;
+}
+
+.banner-image {
+  width: 100%;
+}
+
+/* Teams style */
+.teams {
+  align-items: center;
+}
+
+.team-img-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.our-features {
+  margin-left: 90px;
+  max-width: 540px;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.features-description {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+/* Media query  */
+@media screen and (max-width: 576px) {
+  .navbar,
+  .nav-links,
+  .teams {
+    flex-direction: column;
+  }
+  .team-img-container {
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .navbar,
+  .teams {
+    flex-direction: column;
+  }
+  .team-img-container {
+    margin-bottom: 30px;
+  }
+}
+
+/* Footer style */
